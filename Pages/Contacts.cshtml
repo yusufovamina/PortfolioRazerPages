@@ -1,0 +1,29 @@
+﻿@page
+@model portfolio.Pages.IndexModel
+@{
+    ViewData["Title"] = "Contact Me";
+}
+
+<div class="container">
+    <h1>Contact Me</h1>
+    <p>If you have any questions, feel free to reach out. I'd love to hear from you!</p>
+
+    <form method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name" class="form-control" placeholder="Your Name" required />
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" class="form-control" placeholder="Your Email" required />
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Send Message</button>
+    </form>
+</div>

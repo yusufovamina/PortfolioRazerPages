@@ -1,0 +1,35 @@
+﻿@page
+@model portfolio.Pages.IndexModel
+@{
+    ViewData["Title"] = "Portfolio";
+}
+
+<div class="container">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/yusufovamina">Projects</a></li>
+                <li><a href="/Contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <div class="intro-text">
+
+          <h1>Hello, my name is @Model.Name</h1>
+            <p>@Model.Introduction</p>
+            <div class="buttons">
+
+                <a href="@Model.ProjectsLink" class="btn btn-projects">Projects</a>
+                <a href="@Model.LinkedInLink" class="btn btn-linkedin">LinkedIn</a>
+                <a href="~/Resume.pdf" download class="btn btn-download">Download CV</a> 
+
+            </div>
+            
+        </div>
+        <div class="intro-image">
+            <img src="~/profile.png" alt="Profile Image">
+        </div>
+    </section>
+</div>
